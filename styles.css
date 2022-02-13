@@ -98,7 +98,12 @@ h1,h2,h3 {
     animation-iteration-count: infinite; /*repeticiones*/
     animation-duration: 3s;
 }
-
+.cajaCursos {
+    animation-name: caja ;
+    animation-iteration-count: infinite; /*repeticiones*/
+    animation-duration: 5s;
+    border-color: blueviolet;
+}
 
 
 /*KEYFRAMES*/
@@ -132,4 +137,67 @@ h1,h2,h3 {
     100% /*Final*/ {
         border-radius: 50%; /*Estilos*/
     }
+}
+
+/*MEDIA QUERIES*/
+
+@media (orientation:portrait) and (max-width: 480px) {
+    /*ESTILOS CSS*/ 
+
+}
+
+
+/*PSEUDO CLASES*/
+
+/*HOVER*/
+
+a:hover {
+    font-weight: bold;
+    background-color: orangered;
+    color: white;
+    text-decoration: underline;
+    padding: 5px;
+    margin: 15px 0;
+    cursor: pointer;
+    height: 10px;
+}
+
+/*ENLACE*/
+/*ENLACE NO VISITADO*/
+a:link {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:visited {
+    color: grey;
+    text-decoration: none; 
+}
+
+/*ENLACE ACTIVO*/
+
+a:active {
+    background-color: orangered;
+    color: black;
+}
+
+/*PSEUDOCLASES PARA IMG*/
+
+.img {
+
+}
+
+.img:hover {
+    transform: scale(1.2,1.5);
+    margin-left: 100px;
+}
+
+.active {
+    text-decoration: black;
+    color: orangered;
+}
+
+.list-group-item {
+    text-decoration: blueviolet;
+    color: orangered;
 }

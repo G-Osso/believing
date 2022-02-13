@@ -70,16 +70,18 @@
         <h1 class="animate__animated animate__heartBeat">Contact us!<h1>
         <div>
 
-            <h3 class="mediumTitle">We'd love to hear from you!</h3>
-            <p class="mediumTitle"> Personal information will be required in order for us to communicate with you. </p>
+            <h3 class="animate_animated animate__lightSpeedInRight">We'd love to hear from you!</h3>
+            <p class="textoAnimado"> Personal information will be required in order for us to communicate with you. </p>
         </div>
     </header>
 
-    <main class="container-fluid fondoCol">
-        <section id="menu" class="border">
-        <h2>Menu</h2>
-        <form action="">
-            <fieldset>
+    <main class="container-fluid fondoCentro">
+        
+      <div class="row">
+        <div class="col-12 fondoCol">
+          <h2 class="border">Menu</h2>
+            <form action="">
+              <fieldset>
                 <legend>Personal information</legend>
             
                     <h3>Gender</h3>
@@ -137,11 +139,14 @@
 
                     </li>
                 </fieldset>
-        </section>
+        </div>
+      </div>
+
 
             
-        <section id="levels" class="border">
-            <h3>Levels of English</h3>
+      <div class="row">
+        <div class="col-12 fondoCol">
+            <h3 class="border">Levels of English</h3>
             <span>Beginner</span>
             <input type="radio" name="level of English" value="beginner">
             <span>Intermediate</span>
@@ -153,10 +158,12 @@
             
             <br>
             <button type="button" class="btn btn-secondary">SEND</button>
-        </section>
+        </div>
+      </div>
 
-        <section id="interests" class="border">
-            <h3>Interests</h3>
+        <div class="row"> 
+          <div class="col-12 fondoCol">
+            <h3 class="border">Interests</h3>
             
             <span>Business</span>
             <input type="radio" name="Interests" value="business">
@@ -173,60 +180,65 @@
 
             <br>
             <button type="button" class="btn btn-secondary">SEND</button>
-        </section>
+          </div>
+        </div>
 
-        <section id="advertising" class="border">
-            <h3>How did you hear about us?</h3>
+        <div class="row">
+          <div class="col-12 fondoCol">
+            <h3 class="border">How did you hear about us?</h3>
             <span>Social media</span>
             <input type="radio" name="checkbox" value="Social media">
             <span>Our current/ex/former/previous students</span>
             <input type="radio" name="checkbox" value="Our current/ex/former/previous students">
-            
 
+            <br>
             <span>Accept terms and conditions</span>
             <input type="checkbox" name="accept" value="1" />
-            
             <br>
             <button type="button" class="btn btn-secondary">SEND</button>
+          </div>
+        </div>
 
-        </section>
-
-        <section>
-            <h3>Would you like to work with us? </h3>
+        <div class="row">
+          <div class="col-12 fondoCol">
+            <h3 class="border">Would you like to work with us? </h3>
             <div class="mb-3">
                 <label for="formFileSm" class="form-label">Upload your CV.</label>
                 <input class="form-control form-control-sm" id="formFileSm" type="file">
-              </div>
-        </section>
+            </div>
+          </div>
+        </div>
 
-        <section id="socialnet" class="border">
-            <h3 class="animate__animated animate__swing">Our details</h3>
+        <div class="row">
+          
+            <h3 class="animate__animated animate__swing fondoCol">Nuestras redes:</h3>
 
-            <div>
-        
+            <div class="col-3 fondoCol">
                 <a href="https://accounts.google.com/ServiceLogin/signinchooser?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin">Send an email
                 <img width="100" src="data:image/png;base64,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" alt="Send an email">
                 </a>
 
             </div>
 
-            <div>
+            <div class="col-3 fondoCol">
                 <a href="https://es-la.facebook.com/">Find us on facebook
                 <img width="100"  src="https://thumbs.dreamstime.com/b/ejemplos-del-vector-texto-facebook-icono-logotipo-de-en-el-fondo-blanco-136839789.jpg" alt="">
                 </a>
             </div>
 
-            <div>
+            <div class="col-3 fondoCol">
                 <a href="https://www.instagram.com/?hl=es-la"> Find us on Instagram
                 <img width="100" src="https://phantom-marca.unidadeditorial.es/1064a45dd21bb111457ae6bfb890a051/resize/1320/f/jpg/assets/multimedia/imagenes/2021/09/03/16306843799667.jpg" alt="Find us on Instagram">
                 </a>
             </div>
-        </section>
+        </div>
 
     </main>
     <hr>
     <footer class="container-fluid fondoInifin">Copyright-2022. Desarrollado por G.Osso.
         <a href="index.html"><img width="100" src="img/believing_logo.jpg" alt="This is us" class="logo"></a>
     </footer>
+      <!-- Javascript de Bootstrap-->
+      <script src="js/bootstrap.js"></script>
 </body>
 </html>
