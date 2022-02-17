@@ -201,3 +201,19 @@ a:active {
     text-decoration: blueviolet;
     color: orangered;
 }
+
+/*Selector::pseudo-elemento*/
+
+ a::before{
+     content: "→ Logo   ";
+     color: blueviolet;
+} 
+a::after {
+    content: "   ♥ ";
+    color: orangered;
+}
+
+::selection {
+    color: orangered;
+    background-color: blueviolet;
+}

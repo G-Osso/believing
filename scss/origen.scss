@@ -1,0 +1,85 @@
+// IMPORT
+// @import "_";
+@import "_reset";
+@import "tipografia";
+@import "estructura";
+@import "colores";
+
+// VARIABLES 
+// sintaxis --->  $variable: valor; 
+$color: rgb(255, 51, 0);
+$anchoDeCaja: 
+
+// COMENTARIO DE LÍNEA EN SCSS 
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: o;
+    box-sizing: border-box;
+}
+
+
+
+/*PSEUDO CLASES*/                /*ANIDAMIENTO Para SASS*/
+
+
+
+a   {  
+        &:hover {             /*HOVER*/
+        font-weight: bold;
+        background-color: $color;
+        color: white;
+        text-decoration: underline;
+        padding: 5px;
+        margin: 15px 0;
+        cursor: pointer;
+        height: 10px;
+        }
+        &:link {              /*ENLACE NO VISITADO*/
+        text-decoration: none;
+        color: blueviolet;
+        }
+        &:visited {
+        color: grey;
+        text-decoration: none; 
+        }
+        &:active {           /*ENLACE ACTIVO*/
+        background-color: $color;
+        color: black;
+        }
+    }
+
+/*PSEUDOCLASES PARA IMG*/
+
+
+.img:hover {
+    transform: scale(1.2,1.5);
+    margin-left: 100px;
+}
+
+.active {
+    text-decoration: black;
+    color: $color;
+}
+
+.list-group-item {
+    text-decoration: blueviolet;
+    color: $color;
+}
+
+/*Selector::pseudo-elemento*/
+
+ a::before{
+     content: "→ Logo   ";
+     color: blueviolet;
+} 
+a::after {
+    content: "   ♥ ";
+    color: $color;
+}
+
+::selection {
+    color: $color;
+    background-color: blueviolet;
+}

@@ -1,0 +1,119 @@
+@import "_colores";
+
+nav ul {
+    list-style:none; 
+}
+
+h1,h2,h3 {
+    margin: 10px 0;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+
+
+/*GRADIENTE*/
+
+
+#gradLineal {
+    background-image: linear-gradient(orange, blueviolet) ;
+}
+
+#gradEgg {
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+}
+#gradRadial {
+    background-image: radial-gradient( #9921e8 20%, #fc9842 50%);
+}
+
+/*TRANSICIONES*/
+
+.transicion {
+    transition: all 2s ;  
+}
+.transicion:hover {
+    width: 500px;
+    height:500px;
+    border: #a4508b solid 10px;
+    background-color: #ec9f05;
+    background-image: linear-gradient (315deg, #ec9f05 0%, #f8ceec 60%);
+}
+
+/*TRANSFORMACIONES*/
+
+.mover {
+    transform: translate(-100px, -100px); /*Eje X , Eje Y */
+}
+
+.girar {
+    transform: rotate(10deg);
+}
+
+.escalar {
+    transform: scale(1.00 , 0.75);
+}
+.torcer {
+    transform: skew(10deg, 5deg);
+}
+
+/*ANIMACIONES*/
+
+.textoAnimado {
+    animation-name: texto;
+    animation-iteration-count: infinito; /*repeticiones*/
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+}
+
+.cajaAnimada {
+    animation-name: caja ;
+    animation-iteration-count: infinite; /*repeticiones*/
+    animation-duration: 3s;
+}
+.cajaCursos {
+    animation-name: caja ;
+    animation-iteration-count: infinite; /*repeticiones*/
+    animation-duration: 5s;
+    border-color: blueviolet;
+}
+
+
+/*KEYFRAMES*/
+
+@keyframes texto {
+    from /*Inicio*/ {
+    transform: translate(-200px);/*Estilos*/
+    opacity:0;
+    }
+    to /*Final*/ {
+    transform: translate(0); /*Estilos*/
+    opacity: 1;
+    }
+}
+
+
+@keyframes caja {
+    0% /*Inicio*/ {
+        border-radius: 50%;/*Estilos*/
+        background-color: #ec9f05;
+        transform: skewY(30deg);
+    }
+    20% {
+        transform: translate(20vh);
+    }
+    40% {
+        transform: rotateY(30deg);
+
+    }
+
+    100% /*Final*/ {
+        border-radius: 50%; /*Estilos*/
+    }
+}
+
+/*MEDIA QUERIES*/
+
+@media (orientation:portrait) and (max-width: 480px) {
+    /*ESTILOS CSS*/ 
+
+}
